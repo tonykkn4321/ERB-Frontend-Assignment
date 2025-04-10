@@ -1,0 +1,121 @@
+html {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red;  */
+}
+
+#topBtn {
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+  
+   
+#topBtn:hover {
+    background-color: lightgray; /* Add a light-grey background on hover */
+}
+
+
+.navbar,.navbar-brand {
+    background-color: #ffede7;  
+}
+
+nav button {
+    border: none;
+}
+
+header {
+    color:#7f4722;
+    background-image: url(./img/header_background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family:cursive;
+}
+
+main h2 {
+    padding: 30px;
+    font-family: cursive;
+}
+
+main h3 {
+    font-family: cursive;
+}
+
+.card {
+    font-family:cursive;
+    text-align:justify;
+    border: solid 1px lightgray;
+}
+
+.card img {
+    width: 300px;
+    height: 250px;
+    margin: 15px auto;
+}
+
+.card video, .card iframe {
+    width: 100%;
+    height: 250px;
+}
+
+footer {
+    background-color: #ffede7; 
+    margin-top:50px;
+}
+
+footer h5 {
+    color: #7f4722;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #4f4f4f;
+}
+
+
+/* Dark mode CSS */
+[data-theme="dark"] {
+    background-color: #111 !important;
+    color: #eee;
+}
+  
+[data-theme="dark"] .bg-black {
+    background-color: #fff !important;
+}
+
+[data-theme="dark"] .bg-dark {
+    background-color: #eee !important;
+}
+  
+[data-theme="dark"] .bg-light {
+    background-color: #222 !important;
+}
+  
+[data-theme="dark"] .bg-white {
+    background-color: #000 !important;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 30px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+}
